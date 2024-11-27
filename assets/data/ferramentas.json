@@ -1,0 +1,243 @@
+[
+    {
+      "id": "RFID001",
+      "nome": "Chave de Fenda",
+      "descricao": "Ferramenta manual utilizada para apertar ou soltar parafusos.",
+      "manual": "https://example.com/manual-chave-de-fenda.pdf",
+      "cargos_permissao": ["Técnico", "Engenheiro", "Operador"],
+      "pessoa_responsavel": "Carlos Souza"
+    },
+    {
+      "id": "RFID002",
+      "nome": "Multímetro",
+      "descricao": "Instrumento utilizado para medir grandezas elétricas, como tensão, corrente e resistência.",
+      "manual": "https://example.com/manual-multimetro.pdf",
+      "cargos_permissao": ["Técnico", "Engenheiro"],
+      "pessoa_responsavel": "Ana Lima"
+    },
+    {
+      "id": "RFID003",
+      "nome": "Serrinha",
+      "descricao": "Ferramenta elétrica usada para cortar materiais como madeira e metal.",
+      "manual": "https://example.com/manual-serrinha.pdf",
+      "cargos_permissao": ["Operador", "Supervisor"],
+      "pessoa_responsavel": "Paulo Mendes"
+    },
+    {
+      "id": "RFID004",
+      "nome": "Computador",
+      "descricao": "Equipamento eletrônico usado para processamento de dados e execução de software.",
+      "manual": "https://example.com/manual-computador.pdf",
+      "cargos_permissao": ["Desenvolvedor", "Técnico", "Gerente"],
+      "pessoa_responsavel": "Fernanda Costa"
+    },
+    {
+      "id": "RFID005",
+      "nome": "Alicate de Pressão",
+      "descricao": "Ferramenta usada para segurar ou prensar objetos com firmeza.",
+      "manual": "https://example.com/manual-alicate-de-pressao.pdf",
+      "cargos_permissao": ["Técnico", "Operador"],
+      "pessoa_responsavel": "Juliana Rocha"
+    },
+    {
+      "id": "RFID006",
+      "nome": "Furadeira Elétrica",
+      "descricao": "Ferramenta elétrica usada para perfuração de diversos materiais.",
+      "manual": "https://example.com/manual-furadeira-eletrica.pdf",
+      "cargos_permissao": ["Operador", "Supervisor"],
+      "pessoa_responsavel": "Ricardo Silva"
+    },
+    {
+      "id": "RFID007",
+      "nome": "Lixadeira",
+      "descricao": "Ferramenta elétrica usada para dar acabamento em superfícies, como madeira e metal.",
+      "manual": "https://example.com/manual-lixadeira.pdf",
+      "cargos_permissao": ["Operador", "Técnico"],
+      "pessoa_responsavel": "Luana Pereira"
+    },
+    {
+      "id": "RFID008",
+      "nome": "Soldador Elétrico",
+      "descricao": "Equipamento utilizado para unir peças metálicas por fusão.",
+      "manual": "https://example.com/manual-soldador-eletrico.pdf",
+      "cargos_permissao": ["Técnico", "Operador"],
+      "pessoa_responsavel": "João Alves"
+    },
+    {
+      "id": "RFID009",
+      "nome": "Serra Tico-Tico",
+      "descricao": "Ferramenta elétrica usada para cortar materiais, como madeira e plástico, em linhas curvas.",
+      "manual": "https://example.com/manual-serra-tico-tico.pdf",
+      "cargos_permissao": ["Operador", "Supervisor"],
+      "pessoa_responsavel": "Beatriz Lima"
+    },
+    {
+      "id": "RFID010",
+      "nome": "Espátula",
+      "descricao": "Ferramenta manual utilizada para raspar, alisar ou aplicar materiais como tinta.",
+      "manual": "https://example.com/manual-espatula.pdf",
+      "cargos_permissao": ["Técnico", "Engenheiro"],
+      "pessoa_responsavel": "Marcelo Gomes"
+    },
+    {
+      "id": "RFID011",
+      "nome": "Compasso",
+      "descricao": "Ferramenta usada para desenhar círculos e medir distâncias.",
+      "manual": "https://example.com/manual-compasso.pdf",
+      "cargos_permissao": ["Engenheiro", "Desenhista"],
+      "pessoa_responsavel": "Carla Monteiro"
+    },
+    {
+      "id": "RFID012",
+      "nome": "Chave Inglesa",
+      "descricao": "Ferramenta usada para apertar ou soltar porcas e parafusos de tamanhos variados.",
+      "manual": "https://example.com/manual-chave-inglesa.pdf",
+      "cargos_permissao": ["Técnico", "Engenheiro", "Operador"],
+      "pessoa_responsavel": "Gabriel Santos"
+    },
+    {
+      "id": "RFID013",
+      "nome": "Martelo",
+      "descricao": "Ferramenta manual usada para bater, martelar ou fixar objetos.",
+      "manual": "https://example.com/manual-martelo.pdf",
+      "cargos_permissao": ["Operador", "Técnico"],
+      "pessoa_responsavel": "Eduardo Ferreira"
+    },
+    {
+      "id": "RFID014",
+      "nome": "Esmerilhadeira",
+      "descricao": "Ferramenta elétrica utilizada para desbaste e acabamento de superfícies.",
+      "manual": "https://example.com/manual-esmerilhadeira.pdf",
+      "cargos_permissao": ["Operador", "Técnico"],
+      "pessoa_responsavel": "Roberta Oliveira"
+    },
+    {
+      "id": "RFID015",
+      "nome": "Torno Mecânico",
+      "descricao": "Máquina usada para modelar peças de metal ou outros materiais.",
+      "manual": "https://example.com/manual-torno-mecanico.pdf",
+      "cargos_permissao": ["Operador", "Supervisor"],
+      "pessoa_responsavel": "Vinícius Souza"
+    },
+    {
+      "id": "RFID016",
+      "nome": "Impressora 3D",
+      "descricao": "Equipamento utilizado para criar modelos tridimensionais através da impressão de camadas sucessivas de material.",
+      "manual": "https://example.com/manual-impressora-3d.pdf",
+      "cargos_permissao": ["Desenvolvedor", "Técnico"],
+      "pessoa_responsavel": "Juliana Silva"
+    },
+    {
+        "id": "RFID017",
+        "nome": "Chave de Boca",
+        "descricao": "Ferramenta manual usada para apertar ou soltar porcas e parafusos de tamanhos fixos.",
+        "manual": "https://example.com/manual-chave-de-boca.pdf",
+        "cargos_permissao": ["Técnico", "Operador"],
+        "pessoa_responsavel": "Roberto Almeida"
+      },
+      {
+        "id": "RFID018",
+        "nome": "Plasma Cutter",
+        "descricao": "Equipamento usado para cortar metais através de um jato de plasma de alta temperatura.",
+        "manual": "https://example.com/manual-plasma-cutter.pdf",
+        "cargos_permissao": ["Operador", "Supervisor"],
+        "pessoa_responsavel": "Juliana Costa"
+      },
+      {
+        "id": "RFID019",
+        "nome": "Gerador Elétrico",
+        "descricao": "Equipamento utilizado para gerar eletricidade, frequentemente utilizado como fonte de energia auxiliar.",
+        "manual": "https://example.com/manual-gerador-eletrico.pdf",
+        "cargos_permissao": ["Técnico", "Supervisor"],
+        "pessoa_responsavel": "Leandro Martins"
+      },
+      {
+        "id": "RFID020",
+        "nome": "Morsa",
+        "descricao": "Ferramenta de fixação usada para prender peças de forma firme enquanto se trabalha nelas.",
+        "manual": "https://example.com/manual-morsa.pdf",
+        "cargos_permissao": ["Técnico", "Operador"],
+        "pessoa_responsavel": "Cláudia Barbosa"
+      },
+      {
+        "id": "RFID021",
+        "nome": "Pistola de Calafetar",
+        "descricao": "Ferramenta usada para aplicar calafetagem em superfícies, como vedação em janelas ou portas.",
+        "manual": "https://example.com/manual-pistola-de-calafetar.pdf",
+        "cargos_permissao": ["Operador", "Técnico"],
+        "pessoa_responsavel": "Francisco Lima"
+      },
+      {
+        "id": "RFID022",
+        "nome": "Aparador de Grama",
+        "descricao": "Equipamento utilizado para cortar grama de áreas menores, em lugares onde um cortador de grama maior não pode alcançar.",
+        "manual": "https://example.com/manual-aparador-de-grama.pdf",
+        "cargos_permissao": ["Operador", "Supervisor"],
+        "pessoa_responsavel": "Roberta Souza"
+      },
+      {
+        "id": "RFID023",
+        "nome": "Fresa",
+        "descricao": "Máquina usada para cortar ou usinar materiais com precisão, frequentemente utilizada em usinagem de metais.",
+        "manual": "https://example.com/manual-fresa.pdf",
+        "cargos_permissao": ["Operador", "Supervisor"],
+        "pessoa_responsavel": "Marcos Oliveira"
+      },
+      {
+        "id": "RFID024",
+        "nome": "Desempenadeira",
+        "descricao": "Ferramenta manual usada para alisar superfícies de concreto ou argamassa.",
+        "manual": "https://example.com/manual-desempenadeira.pdf",
+        "cargos_permissao": ["Operador", "Técnico"],
+        "pessoa_responsavel": "José Rodrigues"
+      },
+      {
+        "id": "RFID025",
+        "nome": "Placa Solar",
+        "descricao": "Equipamento usado para converter a luz solar em eletricidade, utilizado para fontes de energia renováveis.",
+        "manual": "https://example.com/manual-placa-solar.pdf",
+        "cargos_permissao": ["Engenheiro", "Técnico"],
+        "pessoa_responsavel": "Renato Costa"
+      },
+      {
+        "id": "RFID026",
+        "nome": "Martelo Pneumático",
+        "descricao": "Ferramenta usada para aplicar força em materiais através de ar comprimido, utilizado para demolição ou trabalho em construção.",
+        "manual": "https://example.com/manual-martelo-pneumatico.pdf",
+        "cargos_permissao": ["Operador", "Supervisor"],
+        "pessoa_responsavel": "Márcio Souza"
+      },
+      {
+        "id": "RFID027",
+        "nome": "Motoferramenta",
+        "descricao": "Ferramenta elétrica portátil usada para executar tarefas como lixar, polir, cortar, entre outras.",
+        "manual": "https://example.com/manual-motoferramenta.pdf",
+        "cargos_permissao": ["Operador", "Técnico"],
+        "pessoa_responsavel": "Sílvia Lima"
+      },
+      {
+        "id": "RFID028",
+        "nome": "Andadeira",
+        "descricao": "Estrutura usada para dar suporte ao trabalhador em altura, proporcionando maior segurança durante atividades em andaimes.",
+        "manual": "https://example.com/manual-andadeira.pdf",
+        "cargos_permissao": ["Operador", "Supervisor"],
+        "pessoa_responsavel": "Carlos Oliveira"
+      },
+      {
+        "id": "RFID029",
+        "nome": "Cortador de Piso",
+        "descricao": "Máquina usada para cortar pisos cerâmicos, porcelanatos ou outros materiais similares, frequentemente utilizada em construção.",
+        "manual": "https://example.com/manual-cortador-de-piso.pdf",
+        "cargos_permissao": ["Operador", "Técnico"],
+        "pessoa_responsavel": "Fernando Silva"
+      },
+      {
+        "id": "RFID030",
+        "nome": "Serra Circular",
+        "descricao": "Ferramenta elétrica usada para cortar materiais como madeira, metal ou plástico, com uma lâmina circular giratória.",
+        "manual": "https://example.com/manual-serra-circular.pdf",
+        "cargos_permissao": ["Operador", "Supervisor"],
+        "pessoa_responsavel": "Gustavo Pinto"
+      }
+  ]
+  
