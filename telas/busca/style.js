@@ -11,7 +11,7 @@ export const Container = styled.View`
 
 export const Capsula = styled.ScrollView`
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `
 
 export const Input = styled.TextInput`

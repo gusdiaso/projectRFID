@@ -1,243 +1,393 @@
 [
-    {
-      "id": "RFID001",
-      "nome": "Chave de Fenda",
-      "descricao": "Ferramenta manual utilizada para apertar ou soltar parafusos.",
-      "manual": "https://example.com/manual-chave-de-fenda.pdf",
-      "cargos_permissao": ["Técnico", "Engenheiro", "Operador"],
-      "pessoa_responsavel": "Carlos Souza"
-    },
-    {
-      "id": "RFID002",
-      "nome": "Multímetro",
-      "descricao": "Instrumento utilizado para medir grandezas elétricas, como tensão, corrente e resistência.",
-      "manual": "https://example.com/manual-multimetro.pdf",
-      "cargos_permissao": ["Técnico", "Engenheiro"],
-      "pessoa_responsavel": "Ana Lima"
-    },
-    {
-      "id": "RFID003",
-      "nome": "Serrinha",
-      "descricao": "Ferramenta elétrica usada para cortar materiais como madeira e metal.",
-      "manual": "https://example.com/manual-serrinha.pdf",
-      "cargos_permissao": ["Operador", "Supervisor"],
-      "pessoa_responsavel": "Paulo Mendes"
-    },
-    {
-      "id": "RFID004",
-      "nome": "Computador",
-      "descricao": "Equipamento eletrônico usado para processamento de dados e execução de software.",
-      "manual": "https://example.com/manual-computador.pdf",
-      "cargos_permissao": ["Desenvolvedor", "Técnico", "Gerente"],
-      "pessoa_responsavel": "Fernanda Costa"
-    },
-    {
-      "id": "RFID005",
-      "nome": "Alicate de Pressão",
-      "descricao": "Ferramenta usada para segurar ou prensar objetos com firmeza.",
-      "manual": "https://example.com/manual-alicate-de-pressao.pdf",
-      "cargos_permissao": ["Técnico", "Operador"],
-      "pessoa_responsavel": "Juliana Rocha"
-    },
-    {
-      "id": "RFID006",
-      "nome": "Furadeira Elétrica",
-      "descricao": "Ferramenta elétrica usada para perfuração de diversos materiais.",
-      "manual": "https://example.com/manual-furadeira-eletrica.pdf",
-      "cargos_permissao": ["Operador", "Supervisor"],
-      "pessoa_responsavel": "Ricardo Silva"
-    },
-    {
-      "id": "RFID007",
-      "nome": "Lixadeira",
-      "descricao": "Ferramenta elétrica usada para dar acabamento em superfícies, como madeira e metal.",
-      "manual": "https://example.com/manual-lixadeira.pdf",
-      "cargos_permissao": ["Operador", "Técnico"],
-      "pessoa_responsavel": "Luana Pereira"
-    },
-    {
-      "id": "RFID008",
-      "nome": "Soldador Elétrico",
-      "descricao": "Equipamento utilizado para unir peças metálicas por fusão.",
-      "manual": "https://example.com/manual-soldador-eletrico.pdf",
-      "cargos_permissao": ["Técnico", "Operador"],
-      "pessoa_responsavel": "João Alves"
-    },
-    {
-      "id": "RFID009",
-      "nome": "Serra Tico-Tico",
-      "descricao": "Ferramenta elétrica usada para cortar materiais, como madeira e plástico, em linhas curvas.",
-      "manual": "https://example.com/manual-serra-tico-tico.pdf",
-      "cargos_permissao": ["Operador", "Supervisor"],
-      "pessoa_responsavel": "Beatriz Lima"
-    },
-    {
-      "id": "RFID010",
-      "nome": "Espátula",
-      "descricao": "Ferramenta manual utilizada para raspar, alisar ou aplicar materiais como tinta.",
-      "manual": "https://example.com/manual-espatula.pdf",
-      "cargos_permissao": ["Técnico", "Engenheiro"],
-      "pessoa_responsavel": "Marcelo Gomes"
-    },
-    {
-      "id": "RFID011",
-      "nome": "Compasso",
-      "descricao": "Ferramenta usada para desenhar círculos e medir distâncias.",
-      "manual": "https://example.com/manual-compasso.pdf",
-      "cargos_permissao": ["Engenheiro", "Desenhista"],
-      "pessoa_responsavel": "Carla Monteiro"
-    },
-    {
-      "id": "RFID012",
-      "nome": "Chave Inglesa",
-      "descricao": "Ferramenta usada para apertar ou soltar porcas e parafusos de tamanhos variados.",
-      "manual": "https://example.com/manual-chave-inglesa.pdf",
-      "cargos_permissao": ["Técnico", "Engenheiro", "Operador"],
-      "pessoa_responsavel": "Gabriel Santos"
-    },
-    {
-      "id": "RFID013",
-      "nome": "Martelo",
-      "descricao": "Ferramenta manual usada para bater, martelar ou fixar objetos.",
-      "manual": "https://example.com/manual-martelo.pdf",
-      "cargos_permissao": ["Operador", "Técnico"],
-      "pessoa_responsavel": "Eduardo Ferreira"
-    },
-    {
-      "id": "RFID014",
-      "nome": "Esmerilhadeira",
-      "descricao": "Ferramenta elétrica utilizada para desbaste e acabamento de superfícies.",
-      "manual": "https://example.com/manual-esmerilhadeira.pdf",
-      "cargos_permissao": ["Operador", "Técnico"],
-      "pessoa_responsavel": "Roberta Oliveira"
-    },
-    {
-      "id": "RFID015",
-      "nome": "Torno Mecânico",
-      "descricao": "Máquina usada para modelar peças de metal ou outros materiais.",
-      "manual": "https://example.com/manual-torno-mecanico.pdf",
-      "cargos_permissao": ["Operador", "Supervisor"],
-      "pessoa_responsavel": "Vinícius Souza"
-    },
-    {
-      "id": "RFID016",
-      "nome": "Impressora 3D",
-      "descricao": "Equipamento utilizado para criar modelos tridimensionais através da impressão de camadas sucessivas de material.",
-      "manual": "https://example.com/manual-impressora-3d.pdf",
-      "cargos_permissao": ["Desenvolvedor", "Técnico"],
-      "pessoa_responsavel": "Juliana Silva"
-    },
-    {
-        "id": "RFID017",
-        "nome": "Chave de Boca",
-        "descricao": "Ferramenta manual usada para apertar ou soltar porcas e parafusos de tamanhos fixos.",
-        "manual": "https://example.com/manual-chave-de-boca.pdf",
-        "cargos_permissao": ["Técnico", "Operador"],
-        "pessoa_responsavel": "Roberto Almeida"
-      },
-      {
-        "id": "RFID018",
-        "nome": "Plasma Cutter",
-        "descricao": "Equipamento usado para cortar metais através de um jato de plasma de alta temperatura.",
-        "manual": "https://example.com/manual-plasma-cutter.pdf",
-        "cargos_permissao": ["Operador", "Supervisor"],
-        "pessoa_responsavel": "Juliana Costa"
-      },
-      {
-        "id": "RFID019",
-        "nome": "Gerador Elétrico",
-        "descricao": "Equipamento utilizado para gerar eletricidade, frequentemente utilizado como fonte de energia auxiliar.",
-        "manual": "https://example.com/manual-gerador-eletrico.pdf",
-        "cargos_permissao": ["Técnico", "Supervisor"],
-        "pessoa_responsavel": "Leandro Martins"
-      },
-      {
-        "id": "RFID020",
-        "nome": "Morsa",
-        "descricao": "Ferramenta de fixação usada para prender peças de forma firme enquanto se trabalha nelas.",
-        "manual": "https://example.com/manual-morsa.pdf",
-        "cargos_permissao": ["Técnico", "Operador"],
-        "pessoa_responsavel": "Cláudia Barbosa"
-      },
-      {
-        "id": "RFID021",
-        "nome": "Pistola de Calafetar",
-        "descricao": "Ferramenta usada para aplicar calafetagem em superfícies, como vedação em janelas ou portas.",
-        "manual": "https://example.com/manual-pistola-de-calafetar.pdf",
-        "cargos_permissao": ["Operador", "Técnico"],
-        "pessoa_responsavel": "Francisco Lima"
-      },
-      {
-        "id": "RFID022",
-        "nome": "Aparador de Grama",
-        "descricao": "Equipamento utilizado para cortar grama de áreas menores, em lugares onde um cortador de grama maior não pode alcançar.",
-        "manual": "https://example.com/manual-aparador-de-grama.pdf",
-        "cargos_permissao": ["Operador", "Supervisor"],
-        "pessoa_responsavel": "Roberta Souza"
-      },
-      {
-        "id": "RFID023",
-        "nome": "Fresa",
-        "descricao": "Máquina usada para cortar ou usinar materiais com precisão, frequentemente utilizada em usinagem de metais.",
-        "manual": "https://example.com/manual-fresa.pdf",
-        "cargos_permissao": ["Operador", "Supervisor"],
-        "pessoa_responsavel": "Marcos Oliveira"
-      },
-      {
-        "id": "RFID024",
-        "nome": "Desempenadeira",
-        "descricao": "Ferramenta manual usada para alisar superfícies de concreto ou argamassa.",
-        "manual": "https://example.com/manual-desempenadeira.pdf",
-        "cargos_permissao": ["Operador", "Técnico"],
-        "pessoa_responsavel": "José Rodrigues"
-      },
-      {
-        "id": "RFID025",
-        "nome": "Placa Solar",
-        "descricao": "Equipamento usado para converter a luz solar em eletricidade, utilizado para fontes de energia renováveis.",
-        "manual": "https://example.com/manual-placa-solar.pdf",
-        "cargos_permissao": ["Engenheiro", "Técnico"],
-        "pessoa_responsavel": "Renato Costa"
-      },
-      {
-        "id": "RFID026",
-        "nome": "Martelo Pneumático",
-        "descricao": "Ferramenta usada para aplicar força em materiais através de ar comprimido, utilizado para demolição ou trabalho em construção.",
-        "manual": "https://example.com/manual-martelo-pneumatico.pdf",
-        "cargos_permissao": ["Operador", "Supervisor"],
-        "pessoa_responsavel": "Márcio Souza"
-      },
-      {
-        "id": "RFID027",
-        "nome": "Motoferramenta",
-        "descricao": "Ferramenta elétrica portátil usada para executar tarefas como lixar, polir, cortar, entre outras.",
-        "manual": "https://example.com/manual-motoferramenta.pdf",
-        "cargos_permissao": ["Operador", "Técnico"],
-        "pessoa_responsavel": "Sílvia Lima"
-      },
-      {
-        "id": "RFID028",
-        "nome": "Andadeira",
-        "descricao": "Estrutura usada para dar suporte ao trabalhador em altura, proporcionando maior segurança durante atividades em andaimes.",
-        "manual": "https://example.com/manual-andadeira.pdf",
-        "cargos_permissao": ["Operador", "Supervisor"],
-        "pessoa_responsavel": "Carlos Oliveira"
-      },
-      {
-        "id": "RFID029",
-        "nome": "Cortador de Piso",
-        "descricao": "Máquina usada para cortar pisos cerâmicos, porcelanatos ou outros materiais similares, frequentemente utilizada em construção.",
-        "manual": "https://example.com/manual-cortador-de-piso.pdf",
-        "cargos_permissao": ["Operador", "Técnico"],
-        "pessoa_responsavel": "Fernando Silva"
-      },
-      {
-        "id": "RFID030",
-        "nome": "Serra Circular",
-        "descricao": "Ferramenta elétrica usada para cortar materiais como madeira, metal ou plástico, com uma lâmina circular giratória.",
-        "manual": "https://example.com/manual-serra-circular.pdf",
-        "cargos_permissao": ["Operador", "Supervisor"],
-        "pessoa_responsavel": "Gustavo Pinto"
-      }
-  ]
-  
+  {
+    "id": "RFID001",
+    "nome": "Chave de Fenda",
+    "descricao": "Ferramenta manual utilizada para apertar ou soltar parafusos.",
+    "manual": "https://pt.wikipedia.org/wiki/Chave_de_fenda",
+    "cargos_permissao": ["Técnico", "Engenheiro", "Operador"],
+    "status": "disponível",
+    "localizacao": "B12",
+    "manutencao": {
+      "ultima_manutencao": "10/01/2024",
+      "periodicidade": "Anual"
+    }
+  },
+  {
+    "id": "RFID002",
+    "nome": "Multímetro",
+    "descricao": "Instrumento utilizado para medir grandezas elétricas, como tensão, corrente e resistência.",
+    "manual": "https://pt.wikipedia.org/wiki/Mult%C3%ADmetro",
+    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "status": "disponível",
+    "localizacao": "C15",
+    "manutencao": {
+      "ultima_manutencao": "15/02/2024",
+      "periodicidade": "Semestral"
+    }
+  },
+  {
+    "id": "RFID003",
+    "nome": "Serrinha",
+    "descricao": "Ferramenta elétrica usada para cortar materiais como madeira e metal.",
+    "manual": "https://pt.wikipedia.org/wiki/Serra",
+    "cargos_permissao": ["Operador", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "A14",
+    "manutencao": {
+      "ultima_manutencao": "01/03/2024",
+      "periodicidade": "Mensal"
+    }
+  },
+  {
+    "id": "RFID004",
+    "nome": "Computador",
+    "descricao": "Equipamento eletrônico usado para processamento de dados e execução de software.",
+    "manual": "https://pt.wikipedia.org/wiki/Computador",
+    "cargos_permissao": ["Desenvolvedor", "Técnico", "Gerente"],
+    "status": "disponível",
+    "localizacao": "D20",
+    "manutencao": {
+      "ultima_manutencao": "25/01/2024",
+      "periodicidade": "Trimestral"
+    }
+  },
+  {
+    "id": "RFID005",
+    "nome": "Alicate de Pressão",
+    "descricao": "Ferramenta usada para segurar ou prensar objetos com firmeza.",
+    "manual": "https://pt.wikipedia.org/wiki/Alicate",
+    "cargos_permissao": ["Técnico", "Operador"],
+    "status": "disponível",
+    "localizacao": "B9",
+    "manutencao": {
+      "ultima_manutencao": "10/04/2024",
+      "periodicidade": "Anual"
+    }
+  },
+  {
+    "id": "RFID006",
+    "nome": "Furadeira Elétrica",
+    "descricao": "Ferramenta elétrica usada para perfuração de diversos materiais.",
+    "manual": "https://pt.wikipedia.org/wiki/Furadeira",
+    "cargos_permissao": ["Operador", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "A13",
+    "manutencao": {
+      "ultima_manutencao": "05/05/2024",
+      "periodicidade": "Semestral"
+    }
+  },
+  {
+    "id": "RFID007",
+    "nome": "Lixadeira",
+    "descricao": "Ferramenta elétrica usada para dar acabamento em superfícies, como madeira e metal.",
+    "manual": "https://pt.wikipedia.org/wiki/Lixadeira",
+    "cargos_permissao": ["Operador", "Técnico"],
+    "status": "disponível",
+    "localizacao": "B7",
+    "manutencao": {
+      "ultima_manutencao": "18/03/2024",
+      "periodicidade": "Mensal"
+    }
+  },
+  {
+    "id": "RFID021",
+    "nome": "Chave de Teste",
+    "descricao": "Ferramenta utilizada para verificar a continuidade elétrica em circuitos.",
+    "manual": "https://pt.wikipedia.org/wiki/Chave_de_teste",
+    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "status": "disponível",
+    "localizacao": "C7",
+    "manutencao": {
+      "ultima_manutencao": "05/04/2024",
+      "periodicidade": "Trimestral"
+    }
+  },
+  {
+    "id": "RFID022",
+    "nome": "Chave de Torque",
+    "descricao": "Ferramenta usada para apertar parafusos com um torque específico.",
+    "manual": "https://pt.wikipedia.org/wiki/Chave_de_torque",
+    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "status": "disponível",
+    "localizacao": "A5",
+    "manutencao": {
+      "ultima_manutencao": "10/05/2024",
+      "periodicidade": "Anual"
+    }
+  },
+  {
+    "id": "RFID023",
+    "nome": "Saca Rolhas",
+    "descricao": "Ferramenta usada para retirar rolhas de garrafas de vinho e outros líquidos.",
+    "manual": "https://pt.wikipedia.org/wiki/Saca-rolhas",
+    "cargos_permissao": ["Operador", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "B3",
+    "manutencao": {
+      "ultima_manutencao": "20/03/2024",
+      "periodicidade": "Anual"
+    }
+  },
+  {
+    "id": "RFID024",
+    "nome": "Chave Combinada",
+    "descricao": "Ferramenta de dupla face, uma extremidade é fixa e a outra é ajustável.",
+    "manual": "https://pt.wikipedia.org/wiki/Chave_combinada",
+    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "status": "disponível",
+    "localizacao": "D11",
+    "manutencao": {
+      "ultima_manutencao": "30/04/2024",
+      "periodicidade": "Trimestral"
+    }
+  },
+  {
+    "id": "RFID025",
+    "nome": "Serra de Bancada",
+    "descricao": "Equipamento fixo usado para cortar materiais, principalmente madeira.",
+    "manual": "https://pt.wikipedia.org/wiki/Serra_de_bancada",
+    "cargos_permissao": ["Operador", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "C2",
+    "manutencao": {
+      "ultima_manutencao": "15/06/2024",
+      "periodicidade": "Semestral"
+    }
+  },
+  {
+    "id": "RFID026",
+    "nome": "Cortador de Grama",
+    "descricao": "Ferramenta motorizada usada para cortar a grama de jardins e terrenos.",
+    "manual": "https://pt.wikipedia.org/wiki/Cortador_de_grama",
+    "cargos_permissao": ["Operador", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "A4",
+    "manutencao": {
+      "ultima_manutencao": "01/07/2024",
+      "periodicidade": "Anual"
+    }
+  },
+  {
+    "id": "RFID027",
+    "nome": "Trena",
+    "descricao": "Ferramenta utilizada para medir distâncias.",
+    "manual": "https://pt.wikipedia.org/wiki/Trena",
+    "cargos_permissao": ["Operador", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "B4",
+    "manutencao": {
+      "ultima_manutencao": "10/06/2024",
+      "periodicidade": "Anual"
+    }
+  },
+  {
+    "id": "RFID028",
+    "nome": "Cortador de Metal",
+    "descricao": "Ferramenta usada para cortar metais com precisão.",
+    "manual": "https://pt.wikipedia.org/wiki/Cortador_de_metal",
+    "cargos_permissao": ["Operador", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "D9",
+    "manutencao": {
+      "ultima_manutencao": "05/05/2024",
+      "periodicidade": "Semestral"
+    }
+  },
+  {
+    "id": "RFID029",
+    "nome": "Máquina de Corte a Laser",
+    "descricao": "Equipamento usado para cortar materiais com alta precisão utilizando laser.",
+    "manual": "https://pt.wikipedia.org/wiki/Corte_a_laser",
+    "cargos_permissao": ["Engenheiro", "Técnico"],
+    "status": "disponível",
+    "localizacao": "D20",
+    "manutencao": {
+      "ultima_manutencao": "01/08/2024",
+      "periodicidade": "Anual"
+    }
+  },
+  {
+    "id": "RFID030",
+    "nome": "Equipamento de Solda",
+    "descricao": "Equipamento usado para unir metais por meio de fusão.",
+    "manual": "https://pt.wikipedia.org/wiki/Solda",
+    "cargos_permissao": ["Operador", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "C6",
+    "manutencao": {
+      "ultima_manutencao": "20/07/2024",
+      "periodicidade": "Semestral"
+    }
+  },
+  {
+    "id": "RFID008",
+    "nome": "Placa de Circuito",
+    "descricao": "Componente eletrônico utilizado para montagem de circuitos e sistemas.",
+    "manual": "https://pt.wikipedia.org/wiki/Placa_de_circuito_impresso",
+    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "status": "disponível",
+    "localizacao": "B2",
+    "manutencao": {
+      "ultima_manutencao": "12/05/2024",
+      "periodicidade": "Semestral"
+    }
+  },
+  {
+    "id": "RFID009",
+    "nome": "Gerador de Energia",
+    "descricao": "Equipamento utilizado para gerar energia elétrica a partir de combustíveis ou outras fontes.",
+    "manual": "https://pt.wikipedia.org/wiki/Gerador_de_energia",
+    "cargos_permissao": ["Técnico", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "C4",
+    "manutencao": {
+      "ultima_manutencao": "05/06/2024",
+      "periodicidade": "Anual"
+    }
+  },
+  {
+    "id": "RFID010",
+    "nome": "Máquina de Costura",
+    "descricao": "Equipamento utilizado para costura de tecidos e outros materiais.",
+    "manual": "https://pt.wikipedia.org/wiki/M%C3%A1quina_de_costura",
+    "cargos_permissao": ["Operador", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "D10",
+    "manutencao": {
+      "ultima_manutencao": "10/07/2024",
+      "periodicidade": "Trimestral"
+    }
+  },
+  {
+    "id": "RFID011",
+    "nome": "Detector de Fumaça",
+    "descricao": "Equipamento utilizado para detectar a presença de fumaça no ambiente.",
+    "manual": "https://pt.wikipedia.org/wiki/Detector_de_fumos",
+    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "status": "disponível",
+    "localizacao": "A8",
+    "manutencao": {
+      "ultima_manutencao": "01/09/2024",
+      "periodicidade": "Anual"
+    }
+  },
+  {
+    "id": "RFID012",
+    "nome": "Controle de Temperatura",
+    "descricao": "Equipamento utilizado para monitorar e controlar a temperatura de ambientes ou sistemas.",
+    "manual": "https://pt.wikipedia.org/wiki/Thermostat",
+    "cargos_permissao": ["Engenheiro", "Técnico"],
+    "status": "disponível",
+    "localizacao": "C12",
+    "manutencao": {
+      "ultima_manutencao": "15/06/2024",
+      "periodicidade": "Trimestral"
+    }
+  },
+  {
+    "id": "RFID013",
+    "nome": "Compensador de Tensão",
+    "descricao": "Equipamento utilizado para ajustar a tensão elétrica em sistemas elétricos.",
+    "manual": "https://pt.wikipedia.org/wiki/Compensador_de_tens%C3%A3o",
+    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "status": "disponível",
+    "localizacao": "D8",
+    "manutencao": {
+      "ultima_manutencao": "12/06/2024",
+      "periodicidade": "Semestral"
+    }
+  },
+  {
+    "id": "RFID014",
+    "nome": "Computador Portátil",
+    "descricao": "Equipamento eletrônico portátil utilizado para processamento de dados e comunicação.",
+    "manual": "https://pt.wikipedia.org/wiki/Computador_port%C3%A1til",
+    "cargos_permissao": ["Desenvolvedor", "Técnico"],
+    "status": "disponível",
+    "localizacao": "C11",
+    "manutencao": {
+      "ultima_manutencao": "01/05/2024",
+      "periodicidade": "Trimestral"
+    }
+  },
+  {
+    "id": "RFID015",
+    "nome": "Máquina de Imprimir",
+    "descricao": "Equipamento utilizado para imprimir textos e imagens em diferentes materiais.",
+    "manual": "https://pt.wikipedia.org/wiki/Impressora",
+    "cargos_permissao": ["Operador", "Supervisor"],
+    "status": "Joao",
+    "localizacao": "B6",
+    "manutencao": {
+      "ultima_manutencao": "20/05/2024",
+      "periodicidade": "Semestral"
+    }
+  },
+  {
+    "id": "RFID016",
+    "nome": "Aspirador de Pó",
+    "descricao": "Equipamento utilizado para aspirar sujeiras e partículas de pó.",
+    "manual": "https://pt.wikipedia.org/wiki/Aspirador_de_p%C3%B3",
+    "cargos_permissao": ["Operador", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "A7",
+    "manutencao": {
+      "ultima_manutencao": "01/07/2024",
+      "periodicidade": "Mensal"
+    }
+  },
+  {
+    "id": "RFID017",
+    "nome": "Soldador Elétrico",
+    "descricao": "Equipamento utilizado para soldagem de metais utilizando calor gerado por corrente elétrica.",
+    "manual": "https://pt.wikipedia.org/wiki/Solda",
+    "cargos_permissao": ["Operador", "Técnico"],
+    "status": "disponível",
+    "localizacao": "A6",
+    "manutencao": {
+      "ultima_manutencao": "10/07/2024",
+      "periodicidade": "Semestral"
+    }
+  },
+  {
+    "id": "RFID018",
+    "nome": "Escova de Aço",
+    "descricao": "Ferramenta utilizada para limpar superfícies de metal com fios de aço.",
+    "manual": "https://pt.wikipedia.org/wiki/Escova_de_a%C3%A7o",
+    "cargos_permissao": ["Operador", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "B5",
+    "manutencao": {
+      "ultima_manutencao": "05/06/2024",
+      "periodicidade": "Mensal"
+    }
+  },
+  {
+    "id": "RFID019",
+    "nome": "Câmera de Segurança",
+    "descricao": "Equipamento utilizado para monitoramento e gravação de imagens em tempo real.",
+    "manual": "https://pt.wikipedia.org/wiki/C%C3%A2mera_de_seguran%C3%A7a",
+    "cargos_permissao": ["Técnico", "Supervisor"],
+    "status": "disponível",
+    "localizacao": "C10",
+    "manutencao": {
+      "ultima_manutencao": "20/07/2024",
+      "periodicidade": "Anual"
+    }
+  },
+  {
+    "id": "RFID020",
+    "nome": "Calculadora Científica",
+    "descricao": "Equipamento eletrônico utilizado para realizar cálculos matemáticos e científicos.",
+    "manual": "https://pt.wikipedia.org/wiki/Calculadora_cient%C3%ADfica",
+    "cargos_permissao": ["Desenvolvedor", "Técnico"],
+    "status": "disponível",
+    "localizacao": "D13",
+    "manutencao": {
+      "ultima_manutencao": "30/05/2024",
+      "periodicidade": "Anual"
+    }
+  }
+]
+

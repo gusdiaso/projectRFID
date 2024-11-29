@@ -1,8 +1,8 @@
 import {Capsula, Texto} from './style.js'
 
-export default function ComponentCardFerramenta({nome}) {
+export default function ComponentCardFerramenta({nome, onPress}) {
   return (
-      <Capsula>
+      <Capsula onPress={onPress}>
         <Texto>{nome}</Texto>
       </Capsula>
   );

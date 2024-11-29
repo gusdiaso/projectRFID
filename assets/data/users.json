@@ -4,13 +4,13 @@
       "username": "Gustavo",
       "password": "123456",
       "email": "gustavou.dias@gmail.com",
-      "cargo": "Engenheiro"
+      "cargo": "Administrador"
     },
     {
         "id": 2,
         "username": "Joao",
-        "password": "1234",
+        "password": "123456",
         "email": "joao@gmail.com",
-        "cargo": "Diretor"
+        "cargo": "Engenheiro"
       }
   ]

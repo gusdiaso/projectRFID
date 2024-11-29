@@ -7,16 +7,20 @@ export const Container = styled.View`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  padding: 20px 0;
 `
-
+export const Capsula = styled.View`
+  background-color: white;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+`
 
 export const Texto = styled.Text`
-  font-size: 18px;
-`
-export const Input = styled.TextInput`
-  padding: 10px 15px;
-  text-align: center;
-
+  font-size: 13px;
+  max-width: 85%;
+  margin-top: 20px;
+  text-align: justify;
 `

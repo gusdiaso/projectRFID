@@ -1,7 +1,7 @@
 import styled from 'styled-components/native'
 
 
-export const Capsula = styled.View`
+export const Capsula = styled.TouchableOpacity`
 background-color: black;
 width: 95%;
 border-radius: 5px;

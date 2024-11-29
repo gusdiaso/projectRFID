@@ -5,11 +5,12 @@ import React, { useEffect } from 'react';
 import Busca from './telas/busca/busca';
 import Manual from './telas/manual/manual';
 import CadastroFerramentas from './telas/cadastroFerramentas/cadastroFerramentas';
-import Autorizacao from './telas/autorizacao/autorizacao';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Alert } from 'react-native';
+import FerramentaDetalhe from './telas/ferramentaDetalhe/ferramentaDetalhe';
+import Emprestar from './telas/emprestar/emprestar';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,7 +27,7 @@ export default function App() {
 
         // Carregar os dados dos usuários
         const existingUserData = await AsyncStorage.getItem('users');
-        if (!existingToolsData) {
+        if (!existingUserData) {
           const initialTools = require("./assets/data/users.json"); // Caminho do seu arquivo JSON
           await AsyncStorage.setItem('users', JSON.stringify(initialTools));
         }
@@ -87,15 +88,22 @@ export default function App() {
           options={{ }}
         />
         <Stack.Screen 
-          name="Autorização de uso" 
-          component={Autorizacao} 
-          options={{ }}
-        />
-        <Stack.Screen 
           name="Cadastrar ferramenta" 
           component={CadastroFerramentas} 
           options={{ }}
         />
+        <Stack.Screen 
+          name="Detalhamento da Ferramenta" 
+          component={FerramentaDetalhe} 
+          options={{ }}
+        />
+
+        <Stack.Screen 
+          name="Emprestimo de Ferramenta" 
+          component={Emprestar} 
+          options={{ }}
+        />
+        
       </Stack.Navigator>
 
     </NavigationContainer>
