@@ -1,16 +1,156 @@
 [
-    {
-      "id": 1,
-      "username": "Gustavo",
-      "password": "123456",
-      "email": "gustavou.dias@gmail.com",
-      "cargo": "Administrador"
-    },
-    {
-        "id": 2,
-        "username": "Joao",
-        "password": "123456",
-        "email": "joao@gmail.com",
-        "cargo": "Engenheiro"
-      }
-  ]
+  {
+    "id": 1,
+    "username": "Gustavo",
+    "password": "123456",
+    "email": "gustavou.dias@gmail.com",
+    "cargo": "Administrador"
+  },
+  {
+    "id": 2,
+    "username": "Joao",
+    "password": "123456",
+    "email": "joao@gmail.com",
+    "cargo": "Engenheiro"
+  },
+  {
+    "id": 3,
+    "username": "Maria",
+    "password": "123456",
+    "email": "maria@gmail.com",
+    "cargo": "Analista"
+  },
+  {
+    "id": 4,
+    "username": "Carlos",
+    "password": "123456",
+    "email": "carlos@gmail.com",
+    "cargo": "Designer"
+  },
+  {
+    "id": 5,
+    "username": "Ana",
+    "password": "123456",
+    "email": "ana@gmail.com",
+    "cargo": "Desenvolvedor"
+  },
+  {
+    "id": 6,
+    "username": "Lucas",
+    "password": "123456",
+    "email": "lucas@gmail.com",
+    "cargo": "Gerente"
+  },
+  {
+    "id": 7,
+    "username": "Felipe",
+    "password": "123456",
+    "email": "felipe@gmail.com",
+    "cargo": "Auxiliar"
+  },
+  {
+    "id": 8,
+    "username": "Laura",
+    "password": "123456",
+    "email": "laura@gmail.com",
+    "cargo": "Assistente"
+  },
+  {
+    "id": 9,
+    "username": "Ricardo",
+    "password": "123456",
+    "email": "ricardo@gmail.com",
+    "cargo": "Coordenador"
+  },
+  {
+    "id": 10,
+    "username": "Fernanda",
+    "password": "123456",
+    "email": "fernanda@gmail.com",
+    "cargo": "Desenvolvedor"
+  },
+  {
+    "id": 11,
+    "username": "Juliana",
+    "password": "123456",
+    "email": "juliana@gmail.com",
+    "cargo": "Marketing"
+  },
+  {
+    "id": 12,
+    "username": "Pedro",
+    "password": "123456",
+    "email": "pedro@gmail.com",
+    "cargo": "Engenheiro"
+  },
+  {
+    "id": 13,
+    "username": "Bianca",
+    "password": "123456",
+    "email": "bianca@gmail.com",
+    "cargo": "Financeiro"
+  },
+  {
+    "id": 14,
+    "username": "Rafael",
+    "password": "123456",
+    "email": "rafael@gmail.com",
+    "cargo": "Analista"
+  },
+  {
+    "id": 15,
+    "username": "Patricia",
+    "password": "123456",
+    "email": "patricia@gmail.com",
+    "cargo": "Consultor"
+  },
+  {
+    "id": 16,
+    "username": "GustavoManoel",
+    "password": "123456",
+    "email": "gustavo2@gmail.com",
+    "cargo": "Administrador"
+  },
+  {
+    "id": 17,
+    "username": "Camila",
+    "password": "123456",
+    "email": "camila@gmail.com",
+    "cargo": "Gerente"
+  },
+  {
+    "id": 18,
+    "username": "André",
+    "password": "123456",
+    "email": "andre@gmail.com",
+    "cargo": "Desenvolvedor"
+  },
+  {
+    "id": 19,
+    "username": "Claudia",
+    "password": "123456",
+    "email": "claudia@gmail.com",
+    "cargo": "Designer"
+  },
+  {
+    "id": 20,
+    "username": "Roberto",
+    "password": "123456",
+    "email": "roberto@gmail.com",
+    "cargo": "Engenheiro"
+  },
+  {
+    "id": 21,
+    "username": "Sofia",
+    "password": "123456",
+    "email": "sofia@gmail.com",
+    "cargo": "Analista"
+  },
+  {
+    "id": 22,
+    "username": "Julio",
+    "password": "123456",
+    "email": "julio@gmail.com",
+    "cargo": "Consultor"
+  }
+]

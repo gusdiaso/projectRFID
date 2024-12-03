@@ -22,7 +22,37 @@ export default function Home({navigation}) {
     };
 
     getLoggedUser();
-  }, []); // Este efeito será executado uma vez após o componente ser montado
+
+    // Função para definir a tag como "nenhuma" no servidor
+    const setTagToNenhuma = async () => {
+      try {
+        const response = await fetch('https://new-turtle-civil.ngrok-free.app/dados', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ tag: 'nenhuma' }),
+        });
+
+        if (!response.ok){
+          console.error('Erro ao definir a tag:', response.status);
+        }
+      } catch (error) {
+        console.error('Erro ao comunicar com o servidor:', error);
+      }
+    };
+
+    // Adiciona o listener para quando a tela for focada
+    const focusListener = navigation.addListener('focus', () => {
+      setTagToNenhuma(); // Define a tag como "nenhuma" sempre que a tela for exibida
+    });
+
+    // Limpa o listener quando o componente for desmontado
+    return () => {
+      focusListener();
+    };
+
+  }, [navigation]); // O efeito será executado sempre que a navegação mudar
 
   const logout = async () => {
     try {
@@ -40,11 +70,14 @@ export default function Home({navigation}) {
 
   return (
     <Container>
-      <ComponentButton texto={"Buscar ferramentas"} onPress={() => {navigation.navigate("Busca de Ferramentas")}}/>
-      <ComponentButton texto={"Manual da ferramenta"} onPress={() => {navigation.navigate("Manual da ferramenta")}}/>
-      <ComponentButton texto={"Emprestar ou devolver ferramenta"} onPress={() => {navigation.navigate("Emprestimo de Ferramenta")}}/>
+      <ComponentButton texto={"Buscar Ferramentas"} onPress={() => {navigation.navigate("Busca de Ferramentas")}}/>
+      <ComponentButton texto={"Manual da Ferramenta"} onPress={() => {navigation.navigate("Manual da Ferramenta")}}/>
+      <ComponentButton texto={"Emprestar ou devolver Ferramenta"} onPress={() => {navigation.navigate("Emprestimo de Ferramenta")}}/>
       {
-        user.cargo === "Administrador" && <ComponentButton texto={"Cadastrar ferramenta"} onPress={() => {navigation.navigate("Cadastrar ferramenta")}}/>
+        user.cargo === "Administrador" && <ComponentButton texto={"Cadastrar Ferramenta"} onPress={() => {navigation.navigate("Cadastrar Ferramenta")}}/>
+      }
+      {
+        user.cargo === "Administrador" && <ComponentButton texto={"Cadastrar Funcionario"} onPress={() => {navigation.navigate("Cadastrar Funcionario")}}/>
       }
       <BotaoExit onPress={logout}>
         <Textobutao>Sair da Conta</Textobutao>

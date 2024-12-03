@@ -26,7 +26,7 @@ export default function Login({ navigation }) {
           
 
           // Navegar para a tela "Ferramentas"
-          navigation.navigate("Ferramentas");
+          navigation.navigate("Home");
         } else {
           // Exibe um alerta caso o usuário não seja encontrado
           Alert.alert(
@@ -82,12 +82,6 @@ export default function Login({ navigation }) {
         texto="Entrar"
         onPress={() => logar(user, senha)}
       />
-      <Capsula>
-        <Aviso>Ainda não possui um login? </Aviso>
-        <Cadastro onPress={() => { navigation.navigate("Cadastro") }}>
-          Cadastre-se!
-        </Cadastro>
-      </Capsula>
     </Container>
   );
 }

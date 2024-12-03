@@ -13,6 +13,12 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "http",
+          "https"
+        ]
+      },
       "supportsTablet": true
     },
     "android": {

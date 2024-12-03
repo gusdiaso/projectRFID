@@ -11,14 +11,15 @@ export default function AddFerramentas({ navigation }) {
   const [cargoperm, setCargoperm] = useState('');
   const [manual, setManual] = useState('');
   const [localizacao, setLocalizacao] = useState('');
+  const [periodicidade, setPeriodicidade] = useState('');
 
   const verificarCampos = (fields) => {
-    return fields.some(field => !field.trim());  // Verifica se algum campo está vazio
+    return fields.some(field => !field.trim()); // Verifica se algum campo está vazio
   };
 
   const adicionarFerramenta = async () => {
-    if (verificarCampos([id, nome, desc, cargoperm, manual])) {
-      Alert.alert('Ops!','Por favor, preencha todos os campos.');
+    if (verificarCampos([id, nome, desc, cargoperm, manual, periodicidade])) {
+      Alert.alert('Ops!', 'Por favor, preencha todos os campos.');
       return;
     }
 
@@ -31,34 +32,37 @@ export default function AddFerramentas({ navigation }) {
         cargos_permissao: cargoperm.split(' '),
         status: "disponível",
         localizacao: localizacao.trim(),
-
+        manutencao: {
+          ultima_manutencao: new Date().toLocaleDateString('pt-BR'), // Data atual
+          periodicidade: periodicidade.trim(),
+        },
       };
 
       const existingToolsData = await AsyncStorage.getItem('tools');
       const tools = existingToolsData ? JSON.parse(existingToolsData) : [];
 
       if (tools.some(tool => tool.id === id.trim())) {
-        Alert.alert('Opss!','Já existe uma ferramenta com esse ID.');
+        Alert.alert('Opss!', 'Já existe uma ferramenta com esse ID.');
         return;
       }
 
       const updatedTools = [...tools, novaFerramenta];
       await AsyncStorage.setItem('tools', JSON.stringify(updatedTools));
 
-      Alert.alert('Pronto!','Ferramenta adicionada com sucesso!');
+      Alert.alert('Pronto!', 'Ferramenta adicionada com sucesso!');
       setId('');
       setNome('');
       setDesc('');
       setCargoperm('');
       setManual('');
       setLocalizacao('');
+      setPeriodicidade('');
     } catch (error) {
       console.error('Erro ao adicionar ferramenta:', error);
       alert('Ocorreu um erro ao adicionar a ferramenta.');
     }
   };
 
-  
   return (
     <Container>
       <Capsula>
@@ -97,6 +101,12 @@ export default function AddFerramentas({ navigation }) {
           placeholder="Digite o link do manual da ferramenta"
           valor={manual}
           setValor={setManual}
+          secury={false}
+        />
+        <ComponentInput
+          placeholder="Digite a periodicidade da manutenção (Ex: Mensal, Anual)"
+          valor={periodicidade}
+          setValor={setPeriodicidade}
           secury={false}
         />
         <BotaoAdd onPress={adicionarFerramenta}><Textobutao>Adicionar Ferramenta</Textobutao></BotaoAdd>

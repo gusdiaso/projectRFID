@@ -1,9 +1,9 @@
-import {Container, Input, Butao, Capsula} from './style.js'
+import {Container, Input, Capsula} from './style.js'
 import { useEffect, useState } from 'react';
 import ComponentCardFerramenta from '../../componentes/cardFerramenta/cardFerramenta.js';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export default function Busca({navigation}) {
+export default function BuscaFerramenta({navigation}) {
   const [ferramenta, setFerramenta] = useState('');  // Estado para armazenar o valor da busca
   const [tools, setTools] = useState([]);  // Estado para armazenar todas as ferramentas
   const [filteredTools, setFilteredTools] = useState([]);  // Estado para armazenar ferramentas filtradas

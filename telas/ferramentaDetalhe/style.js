@@ -12,6 +12,7 @@ export const Container = styled.View`
 
 export const Scrollabe = styled.ScrollView`
   width: 100%;
+  background-color: white;
 `
 export const Capsula = styled.View`
   background-color: black;

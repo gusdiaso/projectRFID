@@ -1,12 +1,11 @@
-import {Container, Imagem, Aviso, Cadastro, Capsula} from './style.js';
+import {Container, Title} from './style.js';
 import ComponentInput from '../../componentes/input/input.js';
 import { useState } from 'react';
-import logo from "../../assets/logo.png";
 import ComponentButton from '../../componentes/botao/botao.js';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Alert } from 'react-native';
 
-export default function LoginCadastro({navigation}) {
+export default function AddFuncionario({navigation}) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
@@ -43,7 +42,7 @@ export default function LoginCadastro({navigation}) {
       // Atualiza a lista de usuários e salva no AsyncStorage
       users.push(newUser);
       await AsyncStorage.setItem('users', JSON.stringify(users));
-      navigation.navigate("Login");
+      navigation.navigate("Cadastrar Funcionario");
       Alert.alert('Sucesso', 'Cadastro realizado com sucesso!');
     } catch (error) {
       console.error('Erro ao cadastrar usuário:', error);
@@ -53,19 +52,14 @@ export default function LoginCadastro({navigation}) {
 
   return (
     <Container>
-      <Imagem source={logo} />
-      
-      <ComponentInput placeholder={"Crie seu username"} valor={username} setValor={setUsername} secury={false} />
-      <ComponentInput placeholder={"Digite seu email"} valor={email} setValor={setEmail} secury={false} />
-      <ComponentInput placeholder={"Digite seu cargo"} valor={cargo} setValor={setCargo} secury={false} />
-      <ComponentInput placeholder={"Crie sua senha"} valor={password} setValor={setPassword} secury={true} />
+      <Title>Preencha as informaçoes:</Title>
+      <ComponentInput placeholder={"Digite o username do funcionario"} valor={username} setValor={setUsername} secury={false} />
+      <ComponentInput placeholder={"Digite o email do funcionario"} valor={email} setValor={setEmail} secury={false} />
+      <ComponentInput placeholder={"Digite o cargo do funcionario"} valor={cargo} setValor={setCargo} secury={false} />
+      <ComponentInput placeholder={"Crie a senha do funcionario"} valor={password} setValor={setPassword} secury={true} />
 
-      <ComponentButton texto="Cadastrar" onPress={() => {registrarUser();}} />
+      <ComponentButton texto="Adicionar Funcionario" onPress={() => {registrarUser();}} />
 
-      <Capsula>
-        <Aviso>Já possui um login? </Aviso>
-        <Cadastro onPress={() => { navigation.navigate("Login"); }}>Logar!</Cadastro>
-      </Capsula>
     </Container>
   );
 }

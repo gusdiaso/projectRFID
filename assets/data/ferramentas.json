@@ -316,7 +316,7 @@
     "nome": "Máquina de Imprimir",
     "descricao": "Equipamento utilizado para imprimir textos e imagens em diferentes materiais.",
     "manual": "https://pt.wikipedia.org/wiki/Impressora",
-    "cargos_permissao": ["Operador", "Supervisor", "Administrador"],
+    "cargos_permissao": ["Operador", "Engenheiro", "Administrador"],
     "status": "Joao",
     "localizacao": "B6",
     "manutencao": {
