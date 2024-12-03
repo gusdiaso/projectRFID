@@ -11,6 +11,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Alert } from 'react-native';
 import FerramentaDetalhe from './telas/ferramentaDetalhe/ferramentaDetalhe';
 import Emprestar from './telas/emprestar/emprestar';
+import AddFerramentas from './telas/addferramenta/addferramenta';
+import UpadateFerramentas from './telas/updateferramenta/updateferramenta';
+import RemoveFerramentas from './telas/removeferramenta/removeferramenta';
 
 const Stack = createNativeStackNavigator();
 
@@ -103,7 +106,26 @@ export default function App() {
           component={Emprestar} 
           options={{ }}
         />
+
+        <Stack.Screen 
+          name="Adicionar Ferramenta" 
+          component={AddFerramentas} 
+          options={{ }}
+        />
         
+        <Stack.Screen 
+          name="Atualizar Ferramenta" 
+          component={UpadateFerramentas} 
+          options={{ }}
+        />
+
+        <Stack.Screen 
+          name="Remover Ferramenta" 
+          component={RemoveFerramentas} 
+          options={{ }}
+        />
+
+
       </Stack.Navigator>
 
     </NavigationContainer>

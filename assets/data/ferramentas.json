@@ -1,6 +1,6 @@
 [
   {
-    "id": "RFID001",
+    "id": "13D323E",
     "nome": "Chave de Fenda",
     "descricao": "Ferramenta manual utilizada para apertar ou soltar parafusos.",
     "manual": "https://pt.wikipedia.org/wiki/Chave_de_fenda",
@@ -26,11 +26,11 @@
     }
   },
   {
-    "id": "RFID003",
+    "id": "4EC857CB82A81",
     "nome": "Serrinha",
     "descricao": "Ferramenta elétrica usada para cortar materiais como madeira e metal.",
     "manual": "https://pt.wikipedia.org/wiki/Serra",
-    "cargos_permissao": ["Operador", "Supervisor"],
+    "cargos_permissao": ["Operador", "Supervisor", "Administrador"],
     "status": "disponível",
     "localizacao": "A14",
     "manutencao": {
@@ -43,7 +43,7 @@
     "nome": "Computador",
     "descricao": "Equipamento eletrônico usado para processamento de dados e execução de software.",
     "manual": "https://pt.wikipedia.org/wiki/Computador",
-    "cargos_permissao": ["Desenvolvedor", "Técnico", "Gerente"],
+    "cargos_permissao": ["Desenvolvedor", "Técnico", "Gerente", "Administrador"],
     "status": "disponível",
     "localizacao": "D20",
     "manutencao": {
@@ -56,7 +56,7 @@
     "nome": "Alicate de Pressão",
     "descricao": "Ferramenta usada para segurar ou prensar objetos com firmeza.",
     "manual": "https://pt.wikipedia.org/wiki/Alicate",
-    "cargos_permissao": ["Técnico", "Operador"],
+    "cargos_permissao": ["Técnico", "Operador", "Administrador"],
     "status": "disponível",
     "localizacao": "B9",
     "manutencao": {
@@ -65,11 +65,11 @@
     }
   },
   {
-    "id": "RFID006",
+    "id": "4C23211BC2A81",
     "nome": "Furadeira Elétrica",
     "descricao": "Ferramenta elétrica usada para perfuração de diversos materiais.",
     "manual": "https://pt.wikipedia.org/wiki/Furadeira",
-    "cargos_permissao": ["Operador", "Supervisor"],
+    "cargos_permissao": ["Operador", "Supervisor", "Administrador"],
     "status": "disponível",
     "localizacao": "A13",
     "manutencao": {
@@ -82,7 +82,7 @@
     "nome": "Lixadeira",
     "descricao": "Ferramenta elétrica usada para dar acabamento em superfícies, como madeira e metal.",
     "manual": "https://pt.wikipedia.org/wiki/Lixadeira",
-    "cargos_permissao": ["Operador", "Técnico"],
+    "cargos_permissao": ["Operador", "Técnico","Administrador"],
     "status": "disponível",
     "localizacao": "B7",
     "manutencao": {
@@ -95,7 +95,7 @@
     "nome": "Chave de Teste",
     "descricao": "Ferramenta utilizada para verificar a continuidade elétrica em circuitos.",
     "manual": "https://pt.wikipedia.org/wiki/Chave_de_teste",
-    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "cargos_permissao": ["Técnico", "Engenheiro","Administrador"],
     "status": "disponível",
     "localizacao": "C7",
     "manutencao": {
@@ -108,7 +108,7 @@
     "nome": "Chave de Torque",
     "descricao": "Ferramenta usada para apertar parafusos com um torque específico.",
     "manual": "https://pt.wikipedia.org/wiki/Chave_de_torque",
-    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "cargos_permissao": ["Técnico", "Engenheiro", "Administrador"],
     "status": "disponível",
     "localizacao": "A5",
     "manutencao": {
@@ -121,7 +121,7 @@
     "nome": "Saca Rolhas",
     "descricao": "Ferramenta usada para retirar rolhas de garrafas de vinho e outros líquidos.",
     "manual": "https://pt.wikipedia.org/wiki/Saca-rolhas",
-    "cargos_permissao": ["Operador", "Supervisor"],
+    "cargos_permissao": ["Operador", "Supervisor", "Administrador"],
     "status": "disponível",
     "localizacao": "B3",
     "manutencao": {
@@ -130,11 +130,11 @@
     }
   },
   {
-    "id": "RFID024",
+    "id": "4E53611BC2A81",
     "nome": "Chave Combinada",
     "descricao": "Ferramenta de dupla face, uma extremidade é fixa e a outra é ajustável.",
     "manual": "https://pt.wikipedia.org/wiki/Chave_combinada",
-    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "cargos_permissao": ["Técnico", "Engenheiro", "Administrador"],
     "status": "disponível",
     "localizacao": "D11",
     "manutencao": {
@@ -147,7 +147,7 @@
     "nome": "Serra de Bancada",
     "descricao": "Equipamento fixo usado para cortar materiais, principalmente madeira.",
     "manual": "https://pt.wikipedia.org/wiki/Serra_de_bancada",
-    "cargos_permissao": ["Operador", "Supervisor"],
+    "cargos_permissao": ["Operador", "Supervisor", "Administrador"],
     "status": "disponível",
     "localizacao": "C2",
     "manutencao": {
@@ -160,7 +160,7 @@
     "nome": "Cortador de Grama",
     "descricao": "Ferramenta motorizada usada para cortar a grama de jardins e terrenos.",
     "manual": "https://pt.wikipedia.org/wiki/Cortador_de_grama",
-    "cargos_permissao": ["Operador", "Supervisor"],
+    "cargos_permissao": ["Operador", "Supervisor", "Administrador"],
     "status": "disponível",
     "localizacao": "A4",
     "manutencao": {
@@ -169,11 +169,11 @@
     }
   },
   {
-    "id": "RFID027",
+    "id": "4EE3A11BC2A81",
     "nome": "Trena",
     "descricao": "Ferramenta utilizada para medir distâncias.",
     "manual": "https://pt.wikipedia.org/wiki/Trena",
-    "cargos_permissao": ["Operador", "Supervisor"],
+    "cargos_permissao": ["Operador", "Supervisor", "Administrador"],
     "status": "disponível",
     "localizacao": "B4",
     "manutencao": {
@@ -186,7 +186,7 @@
     "nome": "Cortador de Metal",
     "descricao": "Ferramenta usada para cortar metais com precisão.",
     "manual": "https://pt.wikipedia.org/wiki/Cortador_de_metal",
-    "cargos_permissao": ["Operador", "Supervisor"],
+    "cargos_permissao": ["Operador", "Supervisor", "Administrador"],
     "status": "disponível",
     "localizacao": "D9",
     "manutencao": {
@@ -199,7 +199,7 @@
     "nome": "Máquina de Corte a Laser",
     "descricao": "Equipamento usado para cortar materiais com alta precisão utilizando laser.",
     "manual": "https://pt.wikipedia.org/wiki/Corte_a_laser",
-    "cargos_permissao": ["Engenheiro", "Técnico"],
+    "cargos_permissao": ["Engenheiro", "Técnico", "Administrador"],
     "status": "disponível",
     "localizacao": "D20",
     "manutencao": {
@@ -225,7 +225,7 @@
     "nome": "Placa de Circuito",
     "descricao": "Componente eletrônico utilizado para montagem de circuitos e sistemas.",
     "manual": "https://pt.wikipedia.org/wiki/Placa_de_circuito_impresso",
-    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "cargos_permissao": ["Técnico", "Engenheiro", "Administrador"],
     "status": "disponível",
     "localizacao": "B2",
     "manutencao": {
@@ -238,7 +238,7 @@
     "nome": "Gerador de Energia",
     "descricao": "Equipamento utilizado para gerar energia elétrica a partir de combustíveis ou outras fontes.",
     "manual": "https://pt.wikipedia.org/wiki/Gerador_de_energia",
-    "cargos_permissao": ["Técnico", "Supervisor"],
+    "cargos_permissao": ["Técnico", "Supervisor", "Administrador"],
     "status": "disponível",
     "localizacao": "C4",
     "manutencao": {
@@ -251,7 +251,7 @@
     "nome": "Máquina de Costura",
     "descricao": "Equipamento utilizado para costura de tecidos e outros materiais.",
     "manual": "https://pt.wikipedia.org/wiki/M%C3%A1quina_de_costura",
-    "cargos_permissao": ["Operador", "Supervisor"],
+    "cargos_permissao": ["Operador", "Supervisor", "Administrador"],
     "status": "disponível",
     "localizacao": "D10",
     "manutencao": {
@@ -264,7 +264,7 @@
     "nome": "Detector de Fumaça",
     "descricao": "Equipamento utilizado para detectar a presença de fumaça no ambiente.",
     "manual": "https://pt.wikipedia.org/wiki/Detector_de_fumos",
-    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "cargos_permissao": ["Técnico", "Engenheiro", "Administrador"],
     "status": "disponível",
     "localizacao": "A8",
     "manutencao": {
@@ -290,7 +290,7 @@
     "nome": "Compensador de Tensão",
     "descricao": "Equipamento utilizado para ajustar a tensão elétrica em sistemas elétricos.",
     "manual": "https://pt.wikipedia.org/wiki/Compensador_de_tens%C3%A3o",
-    "cargos_permissao": ["Técnico", "Engenheiro"],
+    "cargos_permissao": ["Técnico", "Engenheiro", "Administrador"],
     "status": "disponível",
     "localizacao": "D8",
     "manutencao": {
@@ -299,11 +299,11 @@
     }
   },
   {
-    "id": "RFID014",
+    "id": "DA65CBB9",
     "nome": "Computador Portátil",
     "descricao": "Equipamento eletrônico portátil utilizado para processamento de dados e comunicação.",
     "manual": "https://pt.wikipedia.org/wiki/Computador_port%C3%A1til",
-    "cargos_permissao": ["Desenvolvedor", "Técnico"],
+    "cargos_permissao": ["Desenvolvedor", "Técnico", "Administrador"],
     "status": "disponível",
     "localizacao": "C11",
     "manutencao": {
@@ -316,7 +316,7 @@
     "nome": "Máquina de Imprimir",
     "descricao": "Equipamento utilizado para imprimir textos e imagens em diferentes materiais.",
     "manual": "https://pt.wikipedia.org/wiki/Impressora",
-    "cargos_permissao": ["Operador", "Supervisor"],
+    "cargos_permissao": ["Operador", "Supervisor", "Administrador"],
     "status": "Joao",
     "localizacao": "B6",
     "manutencao": {
@@ -329,7 +329,7 @@
     "nome": "Aspirador de Pó",
     "descricao": "Equipamento utilizado para aspirar sujeiras e partículas de pó.",
     "manual": "https://pt.wikipedia.org/wiki/Aspirador_de_p%C3%B3",
-    "cargos_permissao": ["Operador", "Supervisor"],
+    "cargos_permissao": ["Operador", "Supervisor", "Administrador"],
     "status": "disponível",
     "localizacao": "A7",
     "manutencao": {
@@ -342,7 +342,7 @@
     "nome": "Soldador Elétrico",
     "descricao": "Equipamento utilizado para soldagem de metais utilizando calor gerado por corrente elétrica.",
     "manual": "https://pt.wikipedia.org/wiki/Solda",
-    "cargos_permissao": ["Operador", "Técnico"],
+    "cargos_permissao": ["Operador", "Técnico", "Administrador"],
     "status": "disponível",
     "localizacao": "A6",
     "manutencao": {
@@ -355,7 +355,7 @@
     "nome": "Escova de Aço",
     "descricao": "Ferramenta utilizada para limpar superfícies de metal com fios de aço.",
     "manual": "https://pt.wikipedia.org/wiki/Escova_de_a%C3%A7o",
-    "cargos_permissao": ["Operador", "Supervisor"],
+    "cargos_permissao": ["Operador", "Supervisor", "Administrador"],
     "status": "disponível",
     "localizacao": "B5",
     "manutencao": {
@@ -368,7 +368,7 @@
     "nome": "Câmera de Segurança",
     "descricao": "Equipamento utilizado para monitoramento e gravação de imagens em tempo real.",
     "manual": "https://pt.wikipedia.org/wiki/C%C3%A2mera_de_seguran%C3%A7a",
-    "cargos_permissao": ["Técnico", "Supervisor"],
+    "cargos_permissao": ["Técnico", "Supervisor", "Administrador"],
     "status": "disponível",
     "localizacao": "C10",
     "manutencao": {
@@ -381,7 +381,7 @@
     "nome": "Calculadora Científica",
     "descricao": "Equipamento eletrônico utilizado para realizar cálculos matemáticos e científicos.",
     "manual": "https://pt.wikipedia.org/wiki/Calculadora_cient%C3%ADfica",
-    "cargos_permissao": ["Desenvolvedor", "Técnico"],
+    "cargos_permissao": ["Desenvolvedor", "Técnico", "Administrador"],
     "status": "disponível",
     "localizacao": "D13",
     "manutencao": {

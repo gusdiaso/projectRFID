@@ -44,16 +44,26 @@ export default function Emprestar({navigation}) {
   };
 
   const handlePegarFerramenta = async () => {
+    // Verifica se o cargo do usuário está na lista de permissões da ferramenta
+    if (!tool.cargos_permissao.includes(user.cargo)) {
+      Alert.alert(
+        'Acesso Negado',
+        `Seu cargo (${user.cargo}) não tem permissão para pegar a ferramenta ${tool.nome}.`,
+        [{ text: 'OK' }]
+      );
+      return; // Impede que a execução continue
+    }
+  
     const updatedTool = { ...tool, status: user.username }; // Atualizando o status da ferramenta para o nome do usuário
     const updatedTools = tools.map(t => (t.id === id ? updatedTool : t));
-    
+  
     // Atualiza as ferramentas no AsyncStorage
     await AsyncStorage.setItem('tools', JSON.stringify(updatedTools));
-    
+  
     setTools(updatedTools); // Atualiza o estado local
     setTool(updatedTool); // Atualiza a ferramenta exibida
     setIsAvaliado(false);
-    setId('')
+    setId('');
     // Exibe o alerta de sucesso
     Alert.alert(
       'Ferramenta Emprestada',
@@ -61,25 +71,29 @@ export default function Emprestar({navigation}) {
       [{ text: 'OK' }]
     );
   };
+  
 
   const handleDevolverFerramenta = async () => {
-    const updatedTool = { ...tool, status: 'disponível' }; // Alterando o status de volta para "disponível"
-    const updatedTools = tools.map(t => (t.id === id ? updatedTool : t));
-    
-    // Atualiza as ferramentas no AsyncStorage
-    await AsyncStorage.setItem('tools', JSON.stringify(updatedTools));
-    
-    setTools(updatedTools); // Atualiza o estado local
-    setTool(updatedTool); // Atualiza a ferramenta exibida
-    setIsAvaliado(false);
-    setId('')
-    // Exibe o alerta de sucesso
-    Alert.alert(
-      'Ferramenta Devolvida',
-      `Você devolveu a ferramenta ${tool.nome}. A ferramenta agora está disponível.`,
-      [{ text: 'OK' }]
-    );
-  };
+
+
+  const updatedTool = { ...tool, status: 'disponível' }; // Alterando o status de volta para "disponível"
+  const updatedTools = tools.map(t => (t.id === id ? updatedTool : t));
+
+  // Atualiza as ferramentas no AsyncStorage
+  await AsyncStorage.setItem('tools', JSON.stringify(updatedTools));
+
+  setTools(updatedTools); // Atualiza o estado local
+  setTool(updatedTool); // Atualiza a ferramenta exibida
+  setIsAvaliado(false);
+  setId('');
+  // Exibe o alerta de sucesso
+  Alert.alert(
+    'Ferramenta Devolvida',
+    `Você devolveu a ferramenta ${tool.nome}. A ferramenta agora está disponível.`,
+    [{ text: 'OK' }]
+  );
+};
+
 
   return (
     <Container>
@@ -103,7 +117,7 @@ export default function Emprestar({navigation}) {
         </Capsula>
       }
       {
-        tool.status !== "disponível" && isAvaliado &&
+        tool.status === user.username && isAvaliado &&
         <Capsula>
           <Texto>Clique para devolver a ferramenta</Texto>
           <ComponentButton texto={"Devolver Ferramenta"} onPress={handleDevolverFerramenta} />
