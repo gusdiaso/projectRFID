@@ -119,8 +119,8 @@ export default function EmprestarFerramenta({ navigation }) {
   return (
     <Container>
       {!isAvaliado && <Capsula>
-        <ActivityIndicator size="large" color="#000" style={{transform: [{scale:1.5}]}}/>
-        <Texto>Aproxime a ferramenta do leitor para avaliação automática.</Texto>
+        <ActivityIndicator size="large" color="#000" style={{transform: [{scale:1}]}}/>
+        <Texto>Aproxime a ferramenta do leitor para a avaliação automática ...</Texto>
       </Capsula>}
 
       {tool.status === "disponível" && isAvaliado && (

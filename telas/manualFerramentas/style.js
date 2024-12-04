@@ -13,8 +13,9 @@ export const Container = styled.View`
 `
 export const Texto = styled.Text`
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
+  max-width: 70%;
 `
 export const Input = styled.TextInput`
   padding: 10px 15px;

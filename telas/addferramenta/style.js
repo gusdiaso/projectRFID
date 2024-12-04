@@ -7,13 +7,13 @@ export const Container = styled.View`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
 `
 
 export const Capsula = styled.View`
   width: 100%;
   height: max-content;
-  margin-top: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,8 +43,7 @@ export const Textobutao = styled.Text`
 export const Texto = styled.Text`
   font-size: 18px;
   text-align: center;
-  color: black;
   width: 80%;
   text-align: center;
-  font-weight: 500;
+  margin-top: -20px;
 `

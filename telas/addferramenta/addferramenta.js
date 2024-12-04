@@ -1,6 +1,7 @@
-import { Container, Capsula, BotaoRemover, BotaoAdd, Textobutao, Texto } from './style.js';
+import { Container, Capsula, Texto } from './style.js';
 import { useState } from 'react';
 import ComponentInput from '../../componentes/input/input.js';
+import ComponentButton from '../../componentes/botao/botao.js';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Alert } from 'react-native';
 
@@ -61,12 +62,14 @@ export default function AddFerramentas({ navigation }) {
       console.error('Erro ao adicionar ferramenta:', error);
       alert('Ocorreu um erro ao adicionar a ferramenta.');
     }
+
+    navigation.navigate("Home");
   };
 
   return (
     <Container>
       <Capsula>
-        <Texto>Preencha para adicionar ferramenta</Texto>
+        <Texto>Preencha para adicionar ferramenta:</Texto>
         <ComponentInput
           placeholder="Digite a Tag da ferramenta"
           valor={id}
@@ -109,7 +112,7 @@ export default function AddFerramentas({ navigation }) {
           setValor={setPeriodicidade}
           secury={false}
         />
-        <BotaoAdd onPress={adicionarFerramenta}><Textobutao>Adicionar Ferramenta</Textobutao></BotaoAdd>
+        <ComponentButton texto={"Adicionar Ferramenta"} onPress={adicionarFerramenta}/>
       </Capsula>
     </Container>
   );

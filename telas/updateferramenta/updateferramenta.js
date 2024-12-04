@@ -1,8 +1,9 @@
-import { Container, Capsula, Botaoupdate, Textobutao, Texto } from './style.js';
+import { Container, Capsula, Texto } from './style.js';
 import { useState } from 'react';
 import ComponentInput from '../../componentes/input/input.js';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Alert } from 'react-native';
+import ComponentButton from '../../componentes/botao/botao.js';
 
 export default function UpdateFerramentas({ navigation }) {
   const [id, setId] = useState('');
@@ -76,12 +77,14 @@ export default function UpdateFerramentas({ navigation }) {
       console.error('Erro ao atualizar ferramenta:', error);
       Alert.alert('Erro!', 'Ocorreu um erro ao atualizar a ferramenta.');
     }
+    navigation.navigate("Home");
+
   };
 
   return (
     <Container>
       <Capsula>
-        <Texto>Preencha para atualizar ferramenta</Texto>
+        <Texto>Digite o ID da ferramenta e preencha o campo que deseja alterar. O campo que não for preenchido não sofrerá alteração.</Texto>
         <ComponentInput
           placeholder="Digite a Tag da ferramenta"
           valor={id}
@@ -137,9 +140,7 @@ export default function UpdateFerramentas({ navigation }) {
           secury={false}
         />
 
-        <Botaoupdate onPress={atualizarFerramenta}>
-          <Textobutao>Atualizar Ferramenta</Textobutao>
-        </Botaoupdate>
+        <ComponentButton texto={"Atualizar Ferramenta"} onPress={atualizarFerramenta}  />
       </Capsula>
     </Container>
   );

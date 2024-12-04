@@ -57,4 +57,5 @@ export const Texto = styled.Text`
   font-size: 14px;
   margin-top: 15px;
   text-align: center;
+  max-width: 70%;
 `

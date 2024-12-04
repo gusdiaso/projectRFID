@@ -26,7 +26,7 @@ export default function App() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        // await AsyncStorage.clear();//////////////
+        // await AsyncStorage.clear();//////
 
         const existingUserData = await AsyncStorage.getItem('users');
         if (!existingUserData) {

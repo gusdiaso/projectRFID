@@ -3,6 +3,7 @@ import { useState } from 'react';
 import ComponentInput from '../../componentes/input/input.js';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Alert } from 'react-native';
+import ComponentButton from '../../componentes/botao/botao.js';
 
 export default function RemoveFerramentas({ navigation }) {
 
@@ -45,6 +46,8 @@ export default function RemoveFerramentas({ navigation }) {
   
               Alert.alert('Pronto!', 'Ferramenta removida com sucesso!');
               setIdToRemove(''); // Limpa o campo após remoção
+              navigation.navigate("Home");
+
             },
           },
         ],
@@ -54,19 +57,20 @@ export default function RemoveFerramentas({ navigation }) {
       console.error('Erro ao remover ferramenta:', error);
       Alert.alert('Erro!', 'Ocorreu um erro ao remover a ferramenta.');
     }
+
   };
 
   return (
     <Container>
       <Capsula>
-        <Texto>Preencha para remover ferramenta</Texto>
+        <Texto>Preencha para remover ferramenta:</Texto>
         <ComponentInput
           placeholder="Digite o ID da ferramenta para remover"
           valor={idToRemove}
           setValor={setIdToRemove}
           secury={false}
         />
-        <BotaoRemover onPress={removerFerramenta}><Textobutao>Remover Ferramenta</Textobutao></BotaoRemover>
+        <ComponentButton texto={"Remover Ferramenta"} onPress={removerFerramenta}/>
       </Capsula>
     </Container>
   );
