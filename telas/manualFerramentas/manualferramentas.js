@@ -1,13 +1,14 @@
 import { Container, Texto } from './style.js';
 import { useState, useEffect } from 'react';
 import * as Linking from 'expo-linking';
-import { Alert } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage'; 
+import { Alert, ActivityIndicator } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
+import { useIsFocused } from '@react-navigation/native'; // Importa o hook
 
-export default function ManualFerramenta({navigation}) {
+export default function ManualFerramenta({ navigation }) {
   const [tag, setTag] = useState('nenhuma');
-  const [isOpening, setIsOpening] = useState(false); // Controle para evitar múltiplas aberturas
+  const isFocused = useIsFocused(); // Verifica se a tela está em foco
 
   // Função para pegar a tag do servidor
   const fetchTag = async () => {
@@ -16,7 +17,6 @@ export default function ManualFerramenta({navigation}) {
       const tagFromServer = response.data.tag;
 
       if (!tagFromServer) {
-        console.error('Tag inválida recebida:', response.data);
         return;
       }
 
@@ -27,7 +27,6 @@ export default function ManualFerramenta({navigation}) {
         openLink(tagFromServer);
       }
     } catch (error) {
-      console.error('Erro ao buscar tag:', error);
       Alert.alert('Erro', 'Ocorreu um problema ao buscar a tag do servidor.');
     }
   };
@@ -38,13 +37,11 @@ export default function ManualFerramenta({navigation}) {
       const response = await axios.get(url, { maxRedirects: 5 });
       return response.request.responseURL || url;
     } catch (error) {
-      console.error('Erro ao resolver redirecionamento:', error);
       return url;
     }
   };
-  
+
   const openLink = async (id) => {
-    
     const tools = await AsyncStorage.getItem('tools');
     const toolsArray = tools ? JSON.parse(tools) : [];
     const tool = toolsArray.find(item => item.id === id);
@@ -63,7 +60,6 @@ export default function ManualFerramenta({navigation}) {
 
       if (supported) {
         await Linking.openURL(decodedUrl);
-        console.log('URL aberta com sucesso:', decodedUrl);
       } else {
         Alert.alert('Erro', `Não foi possível abrir o link: ${decodedUrl}`);
       }
@@ -73,23 +69,27 @@ export default function ManualFerramenta({navigation}) {
 
     // Após abrir o manual, setamos a tag como "nenhuma" novamente
     await axios.post('https://new-turtle-civil.ngrok-free.app/dados', { tag: 'nenhuma' });
-  
+
+    navigation.navigate("Home");
   };
-  
+
   // Faz a requisição inicial e começa a verificação a cada 1 segundo
   useEffect(() => {
-    fetchTag(); // Pega a tag inicialmente
-    const intervalId = setInterval(() => {
-      fetchTag(); // Verifica a tag a cada 1 segundo
-    }, 1000);
+    if (isFocused) {
+      fetchTag(); // Pega a tag inicialmente
+      const intervalId = setInterval(() => {
+        fetchTag(); // Verifica a tag a cada 1 segundo
+      }, 1000);
 
-    // Limpa o intervalo quando o componente for desmontado
-    return () => clearInterval(intervalId);
-  }, []);
+      // Limpa o intervalo quando o componente sair do foco
+      return () => clearInterval(intervalId);
+    }
+  }, [isFocused]); // O efeito só roda quando o foco da tela muda
 
   return (
     <Container>
-      <Texto>Aproxime a tag para consultar o manual.</Texto>
+      <ActivityIndicator size="large" color="#000" style={{ transform: [{ scale: 1.5 }] }} />
+      <Texto>Aproxime a ferramenta do leitor para consultar o manual.</Texto>
     </Container>
   );
 }

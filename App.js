@@ -19,7 +19,6 @@ import UpadateFerramentas from './telas/updateFerramenta/updateferramenta';
 import RemoveFerramentas from './telas/removerFerramenta/removerferramenta';
 import ListaFuncionario from './telas/listaFuncionarios/listafuncionarios';
 
-
 const Stack = createNativeStackNavigator();
 
 export default function App() {

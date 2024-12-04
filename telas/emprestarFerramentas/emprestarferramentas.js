@@ -2,7 +2,7 @@ import {Container, Capsula, Texto, Textocapa, Info, Capa, Englobador} from './st
 import { useState, useEffect } from 'react';
 import ComponentButton from '../../componentes/botao/botao.js'; 
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Alert } from 'react-native'; // Importando o Alert
+import { Alert, ActivityIndicator } from 'react-native'; // Importando o Alert
 import axios from 'axios'; // Para fazer as requisições HTTP
 
 export default function EmprestarFerramenta({ navigation }) {
@@ -118,7 +118,10 @@ export default function EmprestarFerramenta({ navigation }) {
 
   return (
     <Container>
-      {!isAvaliado &&<Texto>Por favor, aproxime a ferramenta para a avaliação automática.</Texto>}
+      {!isAvaliado && <Capsula>
+        <ActivityIndicator size="large" color="#000" style={{transform: [{scale:1.5}]}}/>
+        <Texto>Aproxime a ferramenta do leitor para avaliação automática.</Texto>
+      </Capsula>}
 
       {tool.status === "disponível" && isAvaliado && (
         <Capa>
@@ -143,7 +146,7 @@ export default function EmprestarFerramenta({ navigation }) {
         <Capa>
           <Englobador>    
           <Capsula>
-            <Textocapa>Ferramenta {tool.nome} está indisponível, no momento ela está com {tool.status}.</Textocapa>
+            <Textocapa>Ferramenta {tool.nome} está indisponível no momento, pois ela está com {tool.status}.</Textocapa>
           </Capsula>
 
          
@@ -156,7 +159,7 @@ export default function EmprestarFerramenta({ navigation }) {
 
           {tool.status === user.username && <ComponentButton texto={"Devolver Ferramenta"} onPress={handleDevolverFerramenta} />}
           {tool.status !== user.username && 
-          <Texto>Desculpe {user.username}! Mas apenas o {tool.status} pode devolver a ferramenta.</Texto>}
+          <Texto>Desculpe {user.username}, mas apenas o {tool.status} pode devolver a ferramenta.</Texto>}
         </Capa>
       )}
     </Container>

@@ -7,6 +7,7 @@ export const Container = styled.View`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 `
 export const Capsula = styled.View`
@@ -53,8 +54,7 @@ export const Info = styled.Text`
 
 
 export const Texto = styled.Text`
-  font-size: 13px;
-  max-width: 85%;
-  margin-top: 20px;
-  text-align: justify;
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
 `
