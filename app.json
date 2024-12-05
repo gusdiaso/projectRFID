@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "project_RFID",
-    "slug": "project_RFID",
+    "slug": "projectrfid",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,16 +19,30 @@
           "https"
         ]
       },
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gustavodias.projectrfid"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gustavodias.projectrfid"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "eaa7ef64-e781-423f-89ff-104d1b9880f8"
+      }
+    },
+    "owner": "gustavodias",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/eaa7ef64-e781-423f-89ff-104d1b9880f8"
     }
   }
 }

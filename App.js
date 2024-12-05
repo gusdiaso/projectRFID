@@ -26,7 +26,7 @@ export default function App() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        // await AsyncStorage.clear(); // Uncomment for debugging purposes
+        // await AsyncStorage.clear(); // Uncomment for debugging purpose
 
         const existingUserData = await AsyncStorage.getItem('users');
         if (!existingUserData) {

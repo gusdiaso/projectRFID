@@ -1,10 +1,10 @@
 [
   {
     "id": "13D323E",
-    "nome": "Chave de Fenda",
-    "descricao": "Ferramenta manual utilizada para apertar ou soltar parafusos.",
-    "manual": "https://pt.wikipedia.org/wiki/Chave_de_fenda",
-    "cargos_permissao": ["Técnico", "Engenheiro", "Operador"],
+    "nome": "Kit de Chaves da Oficicina",
+    "descricao": "Conjunto de chaves diversas utilizado em reparos mecânicos e manutenção geral.",
+    "manual": "https://pt.wikipedia.org/wiki/chaves-da-oficina",
+    "cargos_permissao": ["Técnico", "Engenheiro", "Operador", "Administrador"],
     "status": "disponível",
     "localizacao": "B12",
     "manutencao": {
@@ -13,7 +13,7 @@
     }
   },
   {
-    "id": "RFID002",
+    "id": "4EE3A11BC2A81",
     "nome": "Multímetro",
     "descricao": "Instrumento utilizado para medir grandezas elétricas, como tensão, corrente e resistência.",
     "manual": "https://pt.wikipedia.org/wiki/Mult%C3%ADmetro",
@@ -52,10 +52,10 @@
     }
   },
   {
-    "id": "RFID005",
-    "nome": "Alicate de Pressão",
-    "descricao": "Ferramenta usada para segurar ou prensar objetos com firmeza.",
-    "manual": "https://pt.wikipedia.org/wiki/Alicate",
+    "id": "4C23211BC2A81",
+    "nome": "Estilete",
+    "descricao": "Ferramenta usada para cortar objetos.",
+    "manual": "https://pt.wikipedia.org/wiki/Estilete",
     "cargos_permissao": ["Técnico", "Operador", "Administrador"],
     "status": "disponível",
     "localizacao": "B9",
@@ -65,7 +65,7 @@
     }
   },
   {
-    "id": "4C23211BC2A81",
+    "id": "RFID007",
     "nome": "Furadeira Elétrica",
     "descricao": "Ferramenta elétrica usada para perfuração de diversos materiais.",
     "manual": "https://pt.wikipedia.org/wiki/Furadeira",
@@ -169,7 +169,7 @@
     }
   },
   {
-    "id": "4EE3A11BC2A81",
+    "id": "RFID027",
     "nome": "Trena",
     "descricao": "Ferramenta utilizada para medir distâncias.",
     "manual": "https://pt.wikipedia.org/wiki/Trena",
